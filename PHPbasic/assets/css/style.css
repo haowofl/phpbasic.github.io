@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fafafc;
+}
+
+#main {
+    
+}
+
+#header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+}
+
+#header .header_nav {
+
+}
+
+#header .home_icon{
+    width: 30px;
+    height: 30px;
+}
+.nav,.subnav{
+    list-style-type: none;
+}
+
+.nav > li > a{
+    color: #000;
+}
+.nav li a{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 10px;
+    display: block;
+}
+.nav li {
+    display: relative;
+}
+
+.nav >li:first-child {
+    display: inline-block;
+    border: none;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav > li:hover > a,
+.nav .subnav li > a:hover{
+    color: #f60505;
+}
+.nav .subnav {
+    display: none; 
+    position: absolute;
+    min-width: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+}
+.nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
+}
+
+
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 15px;
+}
+
+.header_search .wrap_search  {
+    border: 1px solid #d3d4d8;
+    max-width: 26.9rem;
+    border-radius: 36px;
+    background: #fff;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header_search .search_icon {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    background: #fff;
+}
+
+.header_search .wrap_search > button {
+    border: none;
+    background-color: #fff;
+}
+
+.header_search .wrap_search > input {
+    width: 100%;
+    border: none;
+    margin-left: 1rem;
+}
+
+.header_user >a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.header_user >a >p{
+    color: #000;
+}
+
+.header_user {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#conten {
+    margin-top: 70px;
+}
+#conten .products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#conten .products > h1 {
+    font-size: 16px;
+}
